@@ -7,4 +7,3 @@ before_install:
 
 script:
   - docker run mesh369/react-docker-travis-ci-aws npm run test -- --coverage
- 
