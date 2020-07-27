@@ -3,4 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f Dockerfile.dev .
+  - docker build -t mesh369/react-docker-travis-ci-aws -f Dockerfile.dev .
+
+script:
+  - docker run mesh369/react-docker-travis-ci-aws npm run test -- --coverage
