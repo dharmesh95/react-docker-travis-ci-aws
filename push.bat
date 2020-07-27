@@ -1,3 +1,3 @@
 git add .
-git commit -m "pushed automatically"
+git commit -m "pushed automatically %time%"
 git push
